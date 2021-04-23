@@ -1,0 +1,39 @@
+<script>
+
+//ES5
+function disp(name){
+    console.log("Hello "+name);
+}
+disp("Rahul");
+disp("Mohit");
+
+
+var myFun = function(name){
+    console.log("Bye "+name);
+}
+myFun("Rahul");
+myFun("Natwarlal");
+
+
+//ES6 Fat Arrow Function
+
+//Example 1
+
+let hello = () => {return "Hello Mister"};
+console.log(hello());
+
+let hello2 = (name) => {return "Hello "+name};
+console.log(hello2("momo"));
+
+//return keyword can be omitted if the block contains single line
+
+let hello3 = (name) => "Hello "+name;
+console.log(hello3("monica"));
+
+
+
+//Example 2 , Adding two numbers
+
+let sum = (a,b) => a+b;
+console.log("Sum = "+sum(10,20));
+</script>

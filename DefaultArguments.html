@@ -1,0 +1,25 @@
+<script>
+   
+   //ES5
+    function add(a,b){
+        console.log(typeof b);
+        b = (typeof b == 'undefined' ? 0 : b);
+        console.log(a+b);
+    }
+    add(4,10);
+    add(4);
+
+//ES6, default arguments
+
+    function mult(x=1,y=1){
+        console.log(x*y);
+    }
+    mult(5);
+
+    const prod = (p=1,q=1) => p*q ;
+
+    console.log(prod(10,2));
+    console.log(`The product of 10 and 2 is ${prod(10,2)}`);
+    console.log(prod(8));
+
+</script>

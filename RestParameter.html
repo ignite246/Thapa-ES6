@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rest Parameter</title>
+    </head>
+    <body>
+        <h1>Rest Parameter : </h1>
+        <h2>
+            <pre>
+                function sum(a,b){
+                    console.log(a+b);
+                }
+        
+                sum(10,20);       // 30
+                sum(1,2,3);       // 3(=1+2)    Required Output = 6
+                sum(2,4,6,8,10);  // 6(=2+4)    Required Output = 30
+            </pre>
+            Suppose we want to create a function which will accept <br>
+            any number of arguments. <br>
+            
+            <br><br>
+
+            Here comes the functionality of Variable number of Arguments.<br>
+            Take a look at the source code.
+
+        </br>
+            </body>
+            <script>
+
+                //ES5
+    
+                function sum(a,b){
+                    console.log(a+b);
+                }
+                sum(1,2,3,4,5,6);
+    
+                //ES6
+    
+                function add(...params){
+                    console.log(params);
+                    console.log(...params);
+                    let total = 0;
+                    for (const num of params) {
+                        total += num;
+                    }
+                    console.log("Total Sum = "+total);
+    
+                }
+                add(1,2,3,4,5,6);
+                add(1,2,3);
+    
+            </script>
+    
+
+</html>

@@ -1,0 +1,42 @@
+<script>
+
+    const emp ={
+        empName : "Rahul",
+        empid : 1683475,
+        project : 'TCS-iON'
+    }
+
+//while destructring variables' name should be exact as in object
+  let {empName,empid,project} = emp;
+  console.log(`${empName} and his Employee ID ${empid}`);
+
+
+//Defining custom name for objects property
+  const student ={
+        studentName : "Mohit",
+        studentRoll : 100
+    }
+
+ 
+  let {studentName:name,studentRoll:roll} = student;
+  console.log(`${name} and Roll is ${roll}`);
+
+
+
+//Nesting of Objects
+
+const me = {
+    myName : "Mohit",
+    company : "TCS",
+    languages : {
+        first : "Java",
+        second : "Python"
+    }
+}
+
+//Destructuring
+
+let {myName:meName, company,languages:langs} = me;
+
+console.log(`Name : ${meName} , Company : ${company} and Languages : ${langs.first} , ${langs.second}`)
+</script>

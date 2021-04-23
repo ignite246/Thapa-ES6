@@ -1,0 +1,24 @@
+<script>
+
+//ES5
+var lang = ['js','php','c','python','java'];
+
+var l1 = lang[0];
+var l2 = lang[1];
+var l3 = lang[2];
+var l4 = lang[3];
+var l5 = lang[4];
+console.log("My one of Favt Lang is : "+l5);
+
+//ES6
+let progLang = ['js','php','c','python','java'];
+
+let [lang1,lang2,lang3,lang4,lang5] = progLang;
+console.log(`My most favt Lang is ${lang5}`);
+console.log(`My least favt Lang is ${lang1}`);
+
+let first, second;
+[first,second] = progLang;
+console.log(`Top 2 Programming Languages are ${first} and ${second}`);
+
+</script>
